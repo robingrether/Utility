@@ -78,6 +78,7 @@ public class StringUtil {
 	 * @return the joined strings
 	 */
 	public static String join(String seperator, String... strings) {
+		if(strings == null || strings.length == 0) return "";
 		StringBuilder builder = new StringBuilder(strings[0]);
 		for(int i = 1; i < strings.length; i++) {
 			builder.append(seperator);
