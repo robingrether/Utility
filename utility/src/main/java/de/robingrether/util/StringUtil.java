@@ -89,7 +89,7 @@ public class StringUtil {
 	
 	/**
 	 * Capitalizes the first letter of every word of the given string.<br>
-	 * e.g. "This is a STRING!" -> "This Is A STRING!"
+	 * e.g. "This is a STRING!" -&gt; "This Is A STRING!"
 	 * 
 	 * @param string string to capitalize
 	 * @return the capitalized string
@@ -106,7 +106,7 @@ public class StringUtil {
 	
 	/**
 	 * Capitalizes the first letter of every word of the given string and decapitalizes all other letters.<br>
-	 * e.g. "This is a STRING!" -> "This Is A String!"
+	 * e.g. "This is a STRING!" -&gt; "This Is A String!"
 	 * 
 	 * @param string string to capitalize
 	 * @return the capitalized string
