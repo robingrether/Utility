@@ -17,7 +17,7 @@ public class Validate {
 	
 	public static void notNull(Object object) {
 		if(object == null) {
-			throw new IllegalArgumentException("The object must not null");
+			throw new IllegalArgumentException();
 		}
 	}
 	

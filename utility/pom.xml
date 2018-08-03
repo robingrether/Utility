@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.robingrether.util</groupId>
   <artifactId>utility</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <name>Robin Grether Utility Classes</name>
   
   <build>
@@ -19,16 +19,16 @@
   	<extensions>
   		<extension>
   			<groupId>org.apache.maven.wagon</groupId>
-  			<artifactId>wagon-ftp</artifactId>
-  			<version>2.8</version>
+  			<artifactId>wagon-ssh-external</artifactId>
+  			<version>3.1.0</version>
   		</extension>
   	</extensions>
   </build>
   
   <distributionManagement>
   	<repository>
-  		<id>robingrether-repository-ftp</id>
-  		<url>ftp://ftp.strato.de/</url>
+  		<id>robingrether-repository-sftp</id>
+  		<url>scpexe://ssh.strato.de/repository/</url>
   	</repository>
   </distributionManagement>
 </project>
