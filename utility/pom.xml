@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.robingrether.util</groupId>
   <artifactId>utility</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <name>Robin Grether Utility Classes</name>
   
   <build>
@@ -27,8 +27,8 @@
   
   <distributionManagement>
   	<repository>
-  		<id>robingrether-repository-sftp</id>
-  		<url>scpexe://ssh.strato.de/repository/</url>
+  		<id>robingrether-repository-ftp</id>
+  		<url>sftp://ssh.strato.de/</url>
   	</repository>
   </distributionManagement>
 </project>

@@ -60,6 +60,38 @@ public class StringUtil {
 	}
 	
 	/**
+	 * Tests whether a string starts with any of the given prefixes.
+	 * 
+	 * @param string the string
+	 * @param prefixes the prefixes to look for
+	 * @return <code>true</code> if the string starts with at least one of the given prefixes
+	 */
+	public static boolean startsWith(String string, String... prefixes) {
+		for(String prefix : prefixes) {
+			if(string.startsWith(prefix)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	/**
+	 * Tests whether any of the strings starts with the given prefix.
+	 * 
+	 * @param prefix the prefix to look for
+	 * @param strings the strings
+	 * @return <code>true</code> if at least one of the given strings starts with the given prefix
+	 */
+	public static boolean startsWith2(String prefix, String... strings) {
+		for(String string : strings) {
+			if(string.startsWith(prefix)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	/**
 	 * Joins an array of strings with a specified seperator.
 	 * 
 	 * @param seperator the seperator
