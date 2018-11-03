@@ -2,8 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.robingrether.util</groupId>
   <artifactId>utility</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <name>Robin Grether Utility Classes</name>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.junit.jupiter</groupId>
+  		<artifactId>junit-jupiter-engine</artifactId>
+  		<version>5.3.1</version>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
   
   <build>
   	<plugins>
@@ -11,15 +20,15 @@
         	<artifactId>maven-compiler-plugin</artifactId>
         	<version>3.1</version>
         	<configuration>
-        		<source>1.7</source>
-        		<target>1.7</target>
+        		<source>1.8</source>
+        		<target>1.8</target>
         	</configuration>
         </plugin>
     </plugins>
   	<extensions>
   		<extension>
   			<groupId>org.apache.maven.wagon</groupId>
-  			<artifactId>wagon-ssh-external</artifactId>
+  			<artifactId>wagon-ssh</artifactId>
   			<version>3.1.0</version>
   		</extension>
   	</extensions>

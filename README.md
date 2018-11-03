@@ -15,6 +15,6 @@ These are some utility classes that I frequently use in my projects.
 <dependency>
   <groupId>de.robingrether.util</groupId>
   <artifactId>utility</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.4</version>
 </dependency>
 ````

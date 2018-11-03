@@ -195,4 +195,20 @@ public class StringUtil {
 		}
 	}
 	
+	public static final char[] hexChars = "0123456789abcdef".toCharArray();
+	
+	/**
+	 * Convert an array of bytes into a hex string.<br>
+	 * The length of the string will be two times the length of the given array.<br>
+	 * The hex string will be lower case.
+	 */
+	public static String bytesToHex(byte[] bytes) {
+		char[] chars = new char[bytes.length * 2];
+		for(int i = 0; i < bytes.length; i++) {
+			chars[2*i] = hexChars[(bytes[i] >> 4) & 0xf];
+			chars[2*i + 1] = hexChars[bytes[i] & 0xf];
+		}
+		return new String(chars);
+	}
+	
 }
